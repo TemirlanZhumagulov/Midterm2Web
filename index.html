@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Midterm 2 Registration form</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/e67a350474.js"></script>
+</head>
+
+<body>
+
+    <div class="main-block">
+
+    <header>
+
+        <div class="navigation">
+
+            <div class="navigation_content">
+
+                <b>Хекслет</b> &nbsp;&nbsp;&nbsp;&nbsp; Программы обучения &nbsp;&nbsp;&nbsp; Бесплатно &nbsp;&nbsp;&nbsp; Компаниям
+
+            </div>
+
+            <div class="navigation_button">
+
+                <button onclick="document.location='index2.html'" class="navigation_button_auth">Вход</button> 
+                <button onclick="document.location='index.html'" class="navigation_button_reg">Регистрация</button>
+
+            </div>
+
+            <div class="navigation_animatedtext">
+
+                <span class="navigation_animatedtext_animatedtextforlogin" id="animate">
+                    Если у вас уже есть аккаунт
+                </span>
+
+                <span class="navigation_animatedtext_animatedtextforreg">
+                    Если у вас еще нет аккаунта
+                </span>
+
+            </div>
+
+            <hr>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="info-block">
+
+            <div class="info-block_info1">
+
+                <i class="fa fa-2x fa-book fas" aria-hidden="true"></i><br><br><b>120+ Курсов</b><br><br>JavaScript, PHP, Python, Java, вёрстка, git, командная строка, sql, функциональное программирование, ооп, автоматизированное тестирование и многое другое
+
+            </div>
+
+            <div class="info-block_info2">
+
+                <i class="fa fa-2x fa-pencil fas" aria-hidden="true"></i><br><br><b>Проекты</b><br><br>Приложения, разрабатываемые на гитхабе в процессе обучения, помогают наработать реальную практику, необходимую для закрепления. Выступают в качестве портфолио
+
+            </div>
+
+            <div class="info-block_info3">
+
+                <i class="fa fa-2x fa-desktop fas" aria-hidden="true"></i><br><br><b>1500+ упражнений и тестов</b><br><br>Онлайн-тренажёр с автоматической проверкой корректности и качества кода с помощью линтеров. Возможность посмотреть решение учителя
+
+            </div>
+
+            <div class="info-block_info4">
+
+                <i class="fa fa-2x fa-users fas" aria-hidden="true"></i><br><br><b>Поддержка в обучении</b><br><br>Наставники помогают двигаться быстро и в нужном направлении. Отвечают на вопросы, подсказывают и помогают сделать код качественнее
+
+            </div>
+
+        </div>
+
+        <div class="form-block">
+
+            <div class="form-block_welcomeinfo">
+
+                Регистрация
+
+            </div>
+
+            <form name="reg" onsubmit="return myValidation()" method="post" action="">
+            
+                <div class="form">
+
+                    <div class="form_email">
+
+                        <label for="email">Электронная почта</label><br>
+
+                    </div>
+
+                    <div class="form_email2">
+
+                        <input class="form_nameinput" id="email" type="text" name="email">
+
+                    </div>
+
+                    <div class="form_name">
+
+                        <label for="name">Имя</label><br>
+
+                    </div>
+
+                    <div class="form_name2">
+
+                        <input class="form_nameinput" id="name" type="text" name="name">
+
+                    </div>
+                    
+                    <div class="form_password">
+
+                        <label for="psw"><span id="font-formpassword">Пароль</span></label><br>
+
+                    </div>
+
+                    <div class="form_password2">
+
+                        <input class="form_nameinput" id="psw" type="password" name="psw">
+
+                    </div>
+                    
+                    <div class="form_submit">
+
+                        <button class="form_submitbutton" type="submit">Зарегистрироваться</button>
+
+                    </div>   
+                    
+                    <div class="form_extratext">
+
+                        Отправляя форму, вы соглашаетесь c «Политикой конфиденциальности» и «Условиями оказания услуг»
+
+                    </div>
+
+                    <div class="form_icons">
+
+                        <div class="form_icons_github">
+
+                            <div class="form_icons_github-icon">
+
+                                <a href="https://github.com/"><i class="fa fa-github fa-2x fasta" aria-hidden="true"></i></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form_icons_facebook">
+
+                            <div class="form_icons_facebook-icon">
+
+                                <a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-2x fasta" aria-hidden="true"></i></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form_icons_linkedin">
+
+                            <div class="form_icons_linkedin-icon">
+
+                                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square fa-2x fasta" aria-hidden="true"></i></a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form_footer">
+
+                        <div class="footer_information">
+
+                            Уже есть аккаунт? <a href="index2.html" >Войти</a>
+
+                        </div>
+
+                    </div>
+
+                </div>   
+
+            </form>
+            
+            <div id="form-block_footer">
+
+                <div class="wave">
+
+                    <div class="wave-one"></div> 
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    </div>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/animatedtext.js"></script>
+</body>
+</html>

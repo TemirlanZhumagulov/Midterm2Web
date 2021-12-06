@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Мой прогресс</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="nav">
+            <div class="nav__content_left">
+            	<a class="nav__logo" href="index2.html">Хекслет</a>
+            	<ul class="nav__items">
+            		<li><a class="nav__items__item" href="#">Программы обучения</a></li>
+            		<li><a class="nav__items__item" href="#">Бесплатно</a></li>
+            		<li><a class="nav__items__item" href="#">Компаниям</a></li>
+            	</ul>
+            </div>
+            <div class="nav__content_right">
+            	<ul class="nav__btns">
+            		<li>
+            			<a class="nav__btns__btn" href="#"><img src="icons/icon-magnifying-glass.png" width="20" height="20"></a>
+            		</li>
+            		<li>
+            			<a class="nav__btns__btn" href="#"><img src="icons/icon-notification.png" width="20" height="20"></a>
+            		</li>
+            		<li>
+            			<a class="nav__btns__btn" href="#"><img src="icons/icon-user.png" width="20" height="20"></a>
+            		</li>
+            	</ul>
+        	</div>
+        	<hr>
+        </div>
+	</header>
+	<section class="menu">
+		<div class="menu__vertical">
+			<ul class="menu__items">
+				<li>
+					<a class="menu__items__item active" href="#"><img src="icons/icon-house.png" width="15" height="15"> Сейчас</a>
+				</li>
+				<li>
+					<a class="menu__items__item" href="#"><img src="icons/icon-book.png" width="15" height="15"> Обучение</a>
+				</li>
+				<li>
+					<a class="menu__items__item" href="#"><img src="icons/icon-folder.png" width="15" height="15"> Курсы</a>
+				</li>
+				<li>
+					<a class="menu__items__item" href="#"><img src="icons/icon-id-card.png" width="15" height="15"> Дневник студента</a>
+				</li>
+				<li>
+					<a class="menu__items__item" href="#"><img src="icons/icon-speech-bubble.png" width="15" height="15"> Обсуждения</a>
+				</li>
+				<li>
+					<a class="menu__items__item" href="#"><img src="icons/icon-bar-chart.png" width="15" height="15"> Рейтинг</a>
+				</li>
+				<li>
+					<a class="menu__items__item" href="#"><img src="icons/icon-duet.png" width="15" height="15"> Партнерка</a>
+				</li>
+				<li>
+					<a class="menu__items__item" href="#"><img src="icons/icon-stick-man.png" width="15" height="15"> Команда</a>
+				</li>
+				<li>
+					<button onclick="Logout()" class="menu_items_item_button">Logout</button>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="user">
+		<div class="user__container">
+			<img class="user__avatar" src="https://cdn2.hexlet.io/derivations/image/fill_webp/60/60/eyJpZCI6ImU0NGQ2OTVhMmRhMGRhYTgwZTUyZmVhMWQ5MTE3NjNhIiwic3RvcmFnZSI6InN0b3JlIn0?signature=bd0b5f8c5eb91ed8c8dc70e1502c2921050375ae2d1096880b2842f9bef04929">
+			<div class="user__text">
+				<h3 class="user__name"><script>document.write(localStorage.getItem('name'));</script></h3>
+				<p class="user__subtitle">Самостоятельное обучение (бесплатные курсы)</p>
+			</div>
+			<div class="user__balls">
+				<img class="user__balls__img" src="icons/stats.png" width="40" height="50">
+				<div class="user__balls__number">
+					<h3 class="blue">81</h3>
+					<p>балл</p>
+				</div>
+			</div>
+			<div class="user__rating">
+				<img class="user__rating__img" src="icons/trophy.png" width="35" height="35">
+				<div class="user__rating__number">
+					<h3 class="blue">31651</h3>
+					<p>в рейтинге</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="courses">
+		<h3 class="courses__title">Последнее</h3>
+		<div class="courses__container">
+			<div class="courses__container__header"></div>
+			<p class="courses__subtitle">Курс</p>
+			<h3 class="courses__container__title">Введение в Git</h3>
+			<p class="courses__container__label">Продолжить</p>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/script3.js"></script>
+</body>
+</html>

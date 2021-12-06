@@ -1,0 +1,168 @@
+body{
+    background: #40FF8B;
+}
+.header_info{
+    position:absolute;
+    color:white;
+    width:200px;
+    top:10px;
+    left:60px;
+}
+
+.form-block{
+    position:absolute;
+    top:60px;
+    left:60px;
+    width:300px;
+    height:440px;
+    border:5px solid white;
+    border-radius:50px;
+}
+
+.form_email{
+    position:absolute;
+    top:20px;
+    left:20px;
+    font-size:25px;
+    color:white;
+}
+.form_email2{
+    position:absolute;
+    top:60px;
+    left:20px;
+}
+.form_nameinput{
+    width:250px;
+    height:20px;
+    border:1px solid black;
+    border-radius:5px;
+}
+.form_name{
+    position:absolute;
+    top:100px;
+    left:20px;
+    font-size:25px;
+    color:white;
+}
+.form_name2{
+    position:absolute;
+    top:140px;
+    left:20px;
+}
+.form_password{
+    position:absolute;
+    top:180px;
+    left:20px;
+    font-size:25px;
+    color:white;
+}
+.form_password2{
+    position:absolute;
+    top:220px;
+    left:20px;
+}
+.form_submit{
+    position:absolute;
+    top:305px;
+    left:20px;
+}
+.form_submitbutton{
+    width:125px;
+    height:30px;
+    border:1px solid black;
+    border-radius:5px;
+    font-size:15px;
+}
+.form_edit{
+    position:absolute;
+    top:305px;
+    left:150px;
+}
+.form_index{
+    position:absolute;
+    top:245px;
+    left:20px;
+    font-size:20px;
+    color:white;  
+}
+.form_index2{
+    position:absolute;
+    top:270px;
+    left:20px;
+}
+.form_editbutton{
+    width:125px;
+    height:30px;
+    border:1px solid black;
+    border-radius:5px;
+    font-size:15px;
+}
+.user-list{
+    position:absolute;
+    border:1px solid white;
+    width:600px;
+    height:600px;
+    top:50px;
+    left:700px;
+    border-collapse:collapse;
+}
+TD, TH {
+    padding: 3px;
+    border: 3px solid white;
+}
+.navigation_button{
+    position:absolute;
+    top:550px;
+    left:120px;
+}
+.navigation_button_auth{
+    margin-top:10px;
+    width:80px;
+    height:35px;
+    border:1px solid black;
+    border-radius:5px;
+    background:white;
+}
+.navigation_button_auth:hover{
+    background:gray;
+    color:white;
+}
+.navigation_button_reg:hover{
+    background:gray;
+    color:white; 
+}
+.navigation_button_reg{
+    margin-top:10px;
+    width:100px;
+    height:35px;
+    border:1px solid black;
+    border-radius:5px;
+    background:white;
+}
+.wave{
+    position:absolute;
+    width:305px;
+    height:100px;
+    margin:0 auto;
+    overflow:hidden;
+    border-radius:45px;
+    top:340px;
+    opacity:0.5;
+}
+.wave-one{
+    background: url('../images/secondwave.png') repeat-x;
+    width:7000px;
+    height:300px;
+    animation:waves 15s infinite linear;
+    position:absolute;
+    bottom:0;
+}
+@keyframes waves{
+    0%{
+        margin-left:0;
+    }
+    100%{
+        margin-left:-1440px;
+    }
+}
+

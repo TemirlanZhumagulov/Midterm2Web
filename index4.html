@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Midterm 2 Registration form</title>
+<link href="css/style4.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/e67a350474.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header_info">
+        <h1><span class="header_info">Admin panel</span></h1>
+    </div>
+    <div class="navigation">
+        <div class="navigation_button">
+            <button onclick="document.location='index2.html'" class="navigation_button_auth">Вход</button> 
+            <button onclick="document.location='index.html'" class="navigation_button_reg">Регистрация</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="form-block">
+    <form name="reg" onsubmit="return myValidation()" id="user-form" method="post" action="">
+            
+        <div class="form">
+
+            <div class="form_email">
+                <label for="email">Электронная почта</label><br>
+            </div>
+
+            <div class="form_email2">
+                <input class="form_nameinput" id="email" type="text" name="email">
+            </div>
+
+            <div class="form_name">
+                <label for="name">Имя</label><br>
+            </div>
+
+            <div class="form_name2">
+                <input class="form_nameinput" id="name" type="text" name="name">
+            </div>
+            
+            <div class="form_password">
+                <label for="psw"><span id="font-formpassword">Пароль</span></label><br>
+            </div>
+            <div class="form_password2">
+                <input class="form_nameinput" id="psw" type="password" name="psw">
+            </div>
+
+            <div class="form_index">
+                <label for="index">Индекс</label><br>
+            </div>
+            
+            <div class="form_index2">
+                <input class="form_nameinput" id="index" type="text" name="index">
+            </div>
+            
+            <div class="form_submit">
+                <button class="form_submitbutton" type="submit">Добавить</button>
+            </div>
+
+            <div class="form_edit">
+                <button class="form_editbutton" onclick="onFormSubmit()" type="submit">Изменить</button>
+            </div>
+
+            <div class="wave">
+
+                <div class="wave-one"></div> 
+    
+            </div>
+
+        </div>   
+
+    </form>
+    </div>
+    <div class="table-block">
+        <table id="table" class="user-list demotable">
+            <thead>
+                <tr>
+                    <th>Email</th><th>Name</th><th>Password</th><th>Delete</th><th>Edit</th><th>Index</th>
+                </tr>
+            </thead>
+            <tbody id="user-list"></tbody>           
+        </table>
+    </div>
+</main>
+
+<script type="text/javascript" src="js/script4.js"></script>
+</body>
+</html>
